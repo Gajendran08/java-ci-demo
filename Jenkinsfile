@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/your-username/java-ci-demo.git', branch: 'main'
+                checkout scm
             }
         }
 
